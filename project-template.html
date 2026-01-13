@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Details</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/project-page.css">
+</head>
+<body>
+    <main class="container">
+        <a href="index.html" class="back-link">&larr; Back to Portfolio</a>
+        
+        <h1 id="project-title">Loading Project...</h1>
+        
+        <img id="project-image" src="" alt="Project main image" class="main-project-image">
+        
+        <div id="project-content"></div>
+
+    </main>
+	
+	<div id="image-lightbox" class="lightbox-modal">
+        <span class="lightbox-close">&times;</span>
+        <img class="lightbox-content" id="lightbox-img" alt="">
+    </div>
+	
+    <script src="scripts/project-loader.js"></script>
+	<script src="scripts/lightbox.js"></script>
+</body>
+</html>

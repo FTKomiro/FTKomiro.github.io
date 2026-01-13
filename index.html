@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Furkan Temizel - Portfolio</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+
+<body>
+
+    <canvas id="lava-lamp-bg"></canvas>
+
+    <main>
+        <section id="hero" class="fullscreen-section">
+            <div class="container">
+                <h1 class="reveal-on-scroll">
+					<span>Furkan Temizel</span>
+				</h1>
+                <p class="subtitle reveal-on-scroll">Computer Engineer</p>
+            </div>
+        </section>
+
+
+        <section id="about">
+            <div class="container">
+                <p class="large-text reveal-on-scroll">
+                    I'm an Honor graduate from İstanbul Kültür University with a passion for solving complex problems and video game development. My work ranges from database management and data analysis to robotics with Arduino and videogame development.
+                </p>
+            </div>
+        </section>
+
+
+        <section id="projects">
+            <div class="container">
+                <h2 class="reveal-on-scroll">Some Projects</h2>
+
+                <div class="filter-controls reveal-on-scroll">
+                    <div class="filter-group">
+                        <input type="checkbox" id="filter-all" class="filter-checkbox" data-category="all" checked>
+                        <label for="filter-all" class="filter-label">Show All</label>
+                    </div>
+                    <div class="filter-group">
+                        <input type="checkbox" id="filter-data" class="filter-checkbox" data-category="data-analysis" checked>
+                        <label for="filter-data" class="filter-label">Data Analysis</label>
+                    </div>
+                    <div class="filter-group">
+                        <input type="checkbox" id="filter-game" class="filter-checkbox" data-category="game-dev" checked>
+                        <label for="filter-game" class="filter-label">Game Development</label>
+                    </div>
+                    <div class="filter-group">
+                        <input type="checkbox" id="filter-robotics" class="filter-checkbox" data-category="robotics" checked>
+                        <label for="filter-robotics" class="filter-label">Robotics</label>
+                    </div>
+                </div>
+                
+                <div class="project-card reveal-on-scroll data-analysis" data-category="data-analysis">
+                    <div class="project-info">
+                        <h3>AI-POWERED ISTANBUL EARTHQUAKE FORESIGHT ANALYSIS (Group Project)</h3>
+                        <p>This project raises awareness for the impending Istanbul earthquake...</p>
+                        <p><strong>Technologies used:</strong> Python, Flask, Pix2Pix GAN, Random Forest, LightGBM, Leaflet.js, Chart.js, HTML, CSS, JavaScript, GeoJSON</p>
+                        <div class="project-links-wrapper">
+                            <a href="https://aipoweredearthquakeforesight.pythonanywhere.com/" target="_blank" rel="noopener noreferrer" class="cta-link">Project Website &rarr;</a>
+                            <a href="https://ieeexplore.ieee.org/document/11222175" target="_blank" rel="noopener noreferrer" class="cta-link">IEEE Xplore &rarr;</a>
+                        </div>
+                        <a href="project-template.html?project=earthquake" class="cta-button project-details-btn">More Details</a>
+                    </div>
+                    <div class="project-visual">
+                        <img src="assets/project-earthquake.png" alt="Istanbul Earthquake Analysis Visualization">
+                    </div>
+                </div>
+
+                <div class="project-card reveal-on-scroll data-analysis" data-category="data-analysis">
+                    <div class="project-info">
+                        <h3>2024 Turkish Local Election Sentiment Analysis Project (Group Project)</h3>
+                        <p>A comprehensive sentiment analysis of social media data...</p>
+                        <p><strong>Technologies used:</strong> Python, Flask, SQLite, Pandas, VADER Sentiment, Scikit-learn, Chart.js, HTML, CSS, JavaScript</p>
+                         <div class="project-links-wrapper">
+                            <a href="https://github.com/kaanygl/sentiment-analysis" target="_blank" rel="noopener noreferrer" class="cta-link">GitHub Repo &rarr;</a>
+                        </div>
+                        <a href="project-template.html?project=sentiment" class="cta-button project-details-btn">More Details</a>
+                    </div>
+                    <div class="project-visual">
+                        <img src="assets/project-sentiment.png" alt="Sentiment analysis project dashboard">
+                    </div>
+                </div>
+                
+                <div class="project-card reveal-on-scroll game-dev" data-category="game-dev">
+                    <div class="project-info">
+                        <h3>Verified NexusMods Author</h3>
+                        <p>Author of multiple mods for games like Cyberpunk 2077 and Tainted Grail: Fall of Avalon...</p>
+                        <p><strong>Technologies used:</strong> C#, Unity, REDmod</p>
+                        <div class="project-links-wrapper">
+                            <a href="https://next.nexusmods.com/profile/KomiroAlyT" target="_blank" rel="noopener noreferrer" class="cta-link">NexusMods Profile &rarr;</a>
+                        </div>
+                        <a href="project-template.html?project=nexus" class="cta-button project-details-btn">More Details</a>
+                    </div>
+                    <div class="project-visual">
+                        <img src="assets/NexusMods.png" alt="NexusMods Logo">
+                    </div>
+                </div>
+
+                <div class="project-card reveal-on-scroll game-dev" data-category="game-dev">
+                    <div class="project-info">
+                        <h3>Navmesh Editor Tool</h3>
+                        <p>Inhouse Unity editor tool i developed for GameSuDo Studios that adds functionality to modify navmeshes.</p>
+                        <p><strong>Technologies used:</strong> Unity, C#</p>
+                        <a href="project-template.html?project=navmesh" class="cta-button project-details-btn">More Details</a>
+                    </div>
+                    <div class="project-visual">
+                        <img src="assets/project-navmesh.png" alt="Navmesh Editor Tool Screenshot">
+                    </div>
+                </div>
+
+                <div class="project-card reveal-on-scroll game-dev" data-category="game-dev">
+                    <div class="project-info">
+                        <h3>Retro FPS Shooter Demo (Group Project)</h3>
+                        <p>A fast-paced first-person shooter demo featuring classic 2.5D aesthetics...</p>
+                        <p><strong>Technologies used:</strong> C#, Unity</p>
+                        <a href="project-template.html?project=retrofps" class="cta-button project-details-btn">More Details</a>
+                    </div>
+                    <div class="project-visual">
+                        <img src="assets/project-retro-fps.png" alt="Screenshot from the 2.5D Retro FPS game demo">
+                    </div>
+                </div>
+
+				<div class="project-card reveal-on-scroll robotics" data-category="robotics">
+                    <div class="project-info">
+                        <h3>Enhanced Smart Fan Controller (Group Project)</h3>
+                        <p>An embedded systems project developed using an Arduino Mega...</p>
+                        <p><strong>Technologies used:</strong> Arduino Mega, DHT11, HC-SRSR04, C++ (Arduino), Proteus</p>
+                        <a href="project-template.html?project=smartfan" class="cta-button project-details-btn">More Details</a>
+                    </div>
+                    <div class="project-visual">
+                        <img src="assets/project-smart-fan.png" alt="Circuit diagram of the smart fan controller">
+                    </div>
+                </div>
+				
+                <div class="center-container">
+                    <button id="show-more-btn" class="cta-button">Show More</button>
+                </div>
+
+            </div>
+        </section>
+        
+        <section id="background">
+             <div class="container grid-layout">
+                 <div class="grid-item reveal-on-scroll">
+                     <h3>Core Languages</h3>
+                     <p>C, C++, C#, Java, Python, HTML/CSS/JS</p>
+                 </div>
+                 <div class="grid-item reveal-on-scroll">
+                     <h3>Preferred Titles</h3>
+                     <p>Computer Engineer, Data Analyst, Game Developer</p>
+                 </div>
+                 <div class="grid-item reveal-on-scroll">
+                     <h3>Education</h3>
+                     <p>B.S. Computer Engineering, İstanbul Kültür University (İKÜ) <br><br> 3.11/4.00 GPA</p>
+                 </div>
+             </div>
+        </section>
+
+        <footer id="contact">
+            <div class="container">
+                <h2 class="reveal-on-scroll">Contact Me</h2>
+                <div class="social-links reveal-on-scroll">
+                    <a href="mailto:furkantemizel88@gmail.com" aria-label="Email"><img src="assets/email-icon.png" alt="Email Icon"></a>
+                    <a href="https://www.linkedin.com/in/furkan-temizel/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><img src="assets/linkedin-icon.png" alt="LinkedIn Icon"></a>
+                    <a href="https://github.com/FTKomiro" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><img src="assets/github-icon.png" alt="GitHub Icon"></a>
+                </div>
+            </div>
+        </footer>
+    </main>
+	
+	<div id="image-lightbox" class="lightbox-modal">
+		<span class="lightbox-close">&times;</span>
+		<img class="lightbox-content" id="lightbox-img" alt="Full Screen View">
+		<div id="lightbox-caption"></div>
+	</div>
+	
+    <script src="scripts/main.js"></script>
+    <script src="scripts/lava-lamp.js"></script>
+	<script src="scripts/lightbox.js"></script>
+</body>
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html> 
+/* not yet implemented */ 
+<html lang="en">
+<head> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Furkan Temizel - Personal</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/project-page.css">
+    <style>
+        /* Add specific styles for the personal page content that fit the dark theme */
+        .personal-card {
+            background: #1a1a1a;
+            padding: 2rem;
+            border-radius: 8px;
+            margin-bottom: 2rem;
+            border: 1px solid var(--secondary-color);
+        }
+        .personal-card h3 {
+            color: var(--accent-color);
+            margin-top: 0;
+            font-size: 1.5rem;
+            border-bottom: 1px solid var(--secondary-color);
+            padding-bottom: 0.5rem;
+            margin-bottom: 1rem;
+        }
+        .music-embed-container {
+            margin-top: 1.5rem;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+        .image-gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); 
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+        .personal-gaming-links {
+            display: flex;
+            justify-content: flex-start;
+            gap: 2.5rem;
+            margin-top: 2rem;
+            padding-top: 1rem;
+            border-top: 1px dashed var(--secondary-color);
+        }
+        .personal-gaming-links img {
+            height: 32px;
+            width: 32px;
+        }
+    </style>
+</head>
+<body>
+    <main class="container">
+        <a href="index.html" class="back-link">&larr; Back to Portfolio</a>
+        
+        <h1 id="page-title">Personal Passions (Under Construction)</h1>
+        
+        <div class="personal-card">
+            <h3>Music Production</h3>
+            <div class="music-embed-container">
+				<iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/soundcloud%253Atracks%253A2018041753&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/komiroft" title="KomiroFT" target="_blank" style="color: #cccccc; text-decoration: none;">KomiroFT</a> · <a href="https://soundcloud.com/komiroft/bittersweet-journey" title="Bittersweet Journey" target="_blank" style="color: #cccccc; text-decoration: none;">Bittersweet Journey</a></div>            </div>
+        </div>
+
+        <div class="personal-card">
+            <h3>Virtual Photography</h3>
+            
+            <div class="image-gallery">
+                <img src="assets/game-screenshot-1.jpg" alt="-">
+                <img src="assets/game-screenshot-2.jpg" alt="-">
+            </div>
+            
+            <div class="social-links personal-gaming-links">
+                <a href="[YOUR_STEAM_URL]" target="_blank" rel="noopener noreferrer" aria-label="Steam Profile"><img src="assets/steam-icon.png" alt="Steam Icon"></a>
+                <a href="[YOUR_XBOX_URL]" target="_blank" rel="noopener noreferrer" aria-label="Xbox Profile"><img src="assets/xbox-icon.png" alt="Xbox Icon"></a>
+                <a href="[YOUR_PSN_URL]" target="_blank" rel="noopener noreferrer" aria-label="PlayStation Profile"><img src="assets/ps-icon.png" alt="PlayStation Icon"></a>
+            </div>
+        </div>
+
+    </main>
+</body>
+</html>
